@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Privacy Policy — Atlas AI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.6; max-width: 780px; margin: 40px auto; padding: 0 20px; color: #222; }
+  h1 { font-size: 1.8em; margin-bottom: 0; }
+  .updated { color: #666; font-size: 0.9em; margin-top: 4px; margin-bottom: 30px; }
+  h2 { font-size: 1.25em; margin-top: 36px; border-bottom: 1px solid #eee; padding-bottom: 6px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  code { background: #f4f4f4; padding: 1px 5px; border-radius: 4px; font-size: 0.92em; }
+  table { border-collapse: collapse; width: 100%; margin: 14px 0; }
+  th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; font-size: 0.95em; }
+  th { background: #f7f7f7; }
+  footer { margin-top: 50px; color: #666; font-size: 0.9em; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy — Atlas AI</h1>
+<p class="updated">Last updated: August 31, 2026</p>
+
+<p>Atlas AI ("the Extension", "we", "us") is a browser extension that lets you select text on any webpage and get answers from an AI model of your choice. This policy explains what data the Extension handles, how it is used, and your choices.</p>
+
+<h2>1. Summary</h2>
+<ul>
+  <li>The Extension does <strong>not</strong> operate its own servers and does <strong>not</strong> collect, store, or receive your data on any backend that we control.</li>
+  <li>Any AI provider API keys you enter are stored only in your browser's local storage, on your own device.</li>
+  <li>Text you select, and any images used for OCR/vision features, are sent directly from your browser to the AI provider you choose (using your own API key) — not to us.</li>
+  <li>We do not use analytics, tracking pixels, or advertising SDKs, and we do not sell or share your data.</li>
+</ul>
+
+<h2>2. Information the Extension Handles</h2>
+
+<table>
+<tr><th>Data</th><th>What happens to it</th></tr>
+<tr>
+  <td>AI provider API key(s) (e.g. for Groq, OpenAI, Gemini, Anthropic, DeepSeek)</td>
+  <td>Entered by you and saved only in your browser's local storage (<code>chrome.storage.local</code>). Never transmitted to us. Used only to authenticate your requests directly to the AI provider you selected.</td>
+</tr>
+<tr>
+  <td>Selected/highlighted text, and typed chat questions</td>
+  <td>Sent directly from your browser to the AI provider's API (using your own key) to generate a response. Not stored or seen by us.</td>
+</tr>
+<tr>
+  <td>Screenshots of the visible tab (used for the OCR/"ask about image" feature)</td>
+  <td>Captured locally with the browser's <code>captureVisibleTab</code> API. Text extraction (OCR) is performed locally in your browser using a bundled Tesseract.js engine. If you ask the AI about an image, that image is sent to the AI provider you selected, the same way as text. It is not sent to us.</td>
+</tr>
+<tr>
+  <td>Site preferences (e.g. sites/pages where you've disabled the extension), theme setting</td>
+  <td>Stored locally in your browser only, to remember your preferences.</td>
+</tr>
+<tr>
+  <td>Dictionary lookups (word definitions)</td>
+  <td>The specific word is sent to the public <code>dictionaryapi.dev</code> service to fetch a definition. No other data accompanies this request.</td>
+</tr>
+<tr>
+  <td>Files you choose to export/download from a chat</td>
+  <td>Saved to your device via the browser's downloads feature, at your request.</td>
+</tr>
+</table>
+
+<h2>3. Third-Party AI Providers</h2>
+<p>When you use the Extension, your questions (and, for supported providers, images) are sent directly from your browser to the AI provider you have configured — for example Groq, OpenAI, Google (Gemini), Anthropic, or DeepSeek — using the API key you supplied. That exchange is governed by the provider's own privacy policy and terms, since we do not operate or control their servers. We recommend reviewing the relevant provider's privacy policy before use.</p>
+
+<h2>4. Permissions We Request, and Why</h2>
+<ul>
+  <li><strong>storage</strong> — to save your API key(s) and preferences locally on your device.</li>
+  <li><strong>activeTab / scripting</strong> — to read selected text and display the in-page sidebar/UI on the page you're viewing.</li>
+  <li><strong>tabs</strong> — to open the chat view and communicate between the toolbar button and the active page.</li>
+  <li><strong>contextMenus</strong> — to add the "Ask AI about selection" right-click menu option.</li>
+  <li><strong>downloads</strong> — to let you save/export content to your device when you choose to.</li>
+</ul>
+
+<h2>5. Data We Do Not Collect</h2>
+<p>We do not use analytics or telemetry SDKs, do not track your browsing activity across sites, do not build advertising profiles, and do not sell or rent personal data to third parties. We do not receive a copy of your API keys, your questions, or the AI's responses.</p>
+
+<h2>6. Data Retention and Deletion</h2>
+<p>All data described above is stored locally in your browser. You can delete it at any time by clearing the Extension's data (via your browser's extension settings) or by uninstalling the Extension.</p>
+
+<h2>7. Children's Privacy</h2>
+<p>The Extension is not directed at children under 13, and we do not knowingly collect information from children.</p>
+
+<h2>8. Changes to This Policy</h2>
+<p>We may update this policy from time to time. Changes will be posted on this page with an updated "Last updated" date.</p>
+
+<h2>9. Contact Us</h2>
+<p>If you have questions about this policy, contact us at: <a href="mailto:atlasintelligencework@gmail.com">atlasintelligencework@gmail.com</a></p>
+
+<footer>Atlas AI — Privacy Policy</footer>
+
+</body>
+</html>
